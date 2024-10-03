@@ -18,8 +18,8 @@ const displayEntries=()=>{
     const tableEntries=entries.map((entry)=>{
         const namecell=`<td class='border px-4 py-2'>${entry.name}</td>`;
         const emailcell=`<td class='border px-4 py-2'>${entry.email}</td>`;
-        const dobcell=`<td class='border px-4 py-2'>${entry.dob}</td>`;
-        const passwordcell=`<td class='border px-4 py-2'>${entry.password}</td>`;
+        const dobcell=`<td class='border px-4 py-2'>${entry.password}</td>`;
+        const passwordcell=`<td class='border px-4 py-2'>${entry.dob}</td>`;
         const termscell=`<td class='border px-4 py-2'>${entry.terms}</td>`; 
         const row =`<tr>${namecell} ${emailcell} ${dobcell} ${passwordcell} ${termscell}</tr>`;
         return row;
@@ -27,8 +27,8 @@ const displayEntries=()=>{
     const table =`<table class="table-auto w-full"><tr>
     <th class="px-4 py-2">Name</th>
      <th class="px-4 py-2">email</th>
-      <th class="px-4 py-2">dob</th>
-       <th class="px-4 py-2">password</th>
+      <th class="px-4 py-2">password</th>
+       <th class="px-4 py-2">dob</th>
         <th class="px-4 py-2">terms</th>
         </tr>${tableEntries}</table>`;
         let detials=document.getElementById("user-entries");
